@@ -20,6 +20,7 @@
         <module>NacosProvider9001</module>
         <module>NacosConsumer9101</module>
         <module>NacosConsumer9102</module>
+        <module>NacosConfig7777</module>
     </modules>
 
     <dependencyManagement>
