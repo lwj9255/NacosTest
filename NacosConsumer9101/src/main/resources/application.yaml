@@ -5,6 +5,6 @@ spring:
     name: nacos-consumer
   cloud:
     discovery:
-      server-addr: localhost:8848
+      server-addr: 192.168.159.1
 service-url:
   nacos-user-service: http://nacos-provider

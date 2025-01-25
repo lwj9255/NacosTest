@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RefreshScope
+@RefreshScope //支持Nacos的动态刷新功能
 public class UserController {
     @Value("${config.info}")
     private String configInfo;
