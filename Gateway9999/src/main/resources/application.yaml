@@ -1,0 +1,21 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.159.1
+    gateway:
+      routes:
+        - id: nacos-provider # 路由的id 自定义 不重复即可
+          uri: http://192.168.159.1:9001/nacos-provider
+          predicates: # 断言
+            - Path=/nacos-provider/**
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: '*'

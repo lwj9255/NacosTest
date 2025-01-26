@@ -21,6 +21,7 @@
         <module>NacosConsumer9101</module>
         <module>NacosConsumer9102</module>
         <module>NacosConfig7777</module>
+        <module>Gateway9999</module>
     </modules>
 
     <dependencyManagement>
