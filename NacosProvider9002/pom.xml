@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.hhu</groupId>
-    <artifactId>Gateway9999</artifactId>
+    <artifactId>NacosProvider9002</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>Gateway9999</name>
-    <description>Gateway9999</description>
+    <name>NacosProvider9002</name>
+    <description>Nacos 注册中心案例-服务的提供者</description>
 
     <parent>
         <groupId>com.hhu</groupId>
@@ -24,28 +24,25 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-        </dependency>
-
     </dependencies>
 
     <dependencyManagement>
@@ -77,7 +74,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.hhu.gateway9999.Gateway9999Application</mainClass>
+                    <mainClass>com.hhu.nacosprovider9001.NacosProvider9002Application</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

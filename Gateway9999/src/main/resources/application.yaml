@@ -7,12 +7,24 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.159.1
+#    gateway:
+#      routes:
+#        - id: route01 # 路由的id 自定义 不重复即可
+#          uri: http://192.168.159.1:9001/nacos-provider
+#          predicates: # 断言 如果出现以下路由，则变成上面的uri
+#            - Path=/nacos-provider/**
     gateway:
+      discovery:
+        locator:
+          enabled: false # 开启注册中心的路由 自动负载均衡
       routes:
-        - id: nacos-provider # 路由的id 自定义 不重复即可
-          uri: http://192.168.159.1:9001/nacos-provider
-          predicates: # 断言
-            - Path=/nacos-provider/**
+        - id: nacos-provider #路由ID，没有固定要求，但是要保证唯一，建议配合服务名
+          uri: lb://nacos-provider # lb 代表 负载均衡（Load Balancer）,nacos-provider表示要请求的服务
+          predicates: #断言
+            - Path=/sheep/**
+          filters:
+            - StripPrefix=1 #拼接时忽略断言中的第一个单词
+
 
 management:
   endpoint:
