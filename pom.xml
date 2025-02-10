@@ -23,6 +23,8 @@
         <module>NacosConfig7777</module>
         <module>Gateway9999</module>
         <module>NacosProvider9002</module>
+        <module>StockService8802</module>
+        <module>OrderService8801</module>
     </modules>
 
     <dependencyManagement>

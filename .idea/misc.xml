@@ -10,7 +10,19 @@
         <option value="$PROJECT_DIR$/NacosConsumer9102/pom.xml" />
         <option value="$PROJECT_DIR$/NacosConfig7777/pom.xml" />
         <option value="$PROJECT_DIR$/Gateway9999/pom.xml" />
+        <option value="$PROJECT_DIR$/Seata-XAandAT/pom.xml" />
+        <option value="$PROJECT_DIR$/Seata-XAandAT/Seata-TCC/pom.xml" />
+        <option value="$PROJECT_DIR$/Seata-XAandAT/OrderService8801/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Seata-XAandAT/pom.xml" />
+        <option value="$PROJECT_DIR$/tcc-account-service/pom.xml" />
+        <option value="$PROJECT_DIR$/tcc-mysql-common/pom.xml" />
+        <option value="$PROJECT_DIR$/tcc-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/tcc-storage-service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

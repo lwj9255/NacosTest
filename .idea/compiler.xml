@@ -11,9 +11,19 @@
         <module name="NacosConsumer9102" />
         <module name="NacosProvider9002" />
         <module name="NacosConsumer9101" />
-        <module name="Gateway9999" />
         <module name="NacosProvider9001" />
+        <module name="StockService8802" />
+        <module name="OrderService8801" />
+        <module name="Gateway9999" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Seata-TCC" target="1.8" />
+      <module name="Seata-XAandAT" target="1.8" />
+      <module name="tcc-account-service" target="1.8" />
+      <module name="tcc-mysql-common" target="1.8" />
+      <module name="tcc-order-service" target="1.8" />
+      <module name="tcc-storage-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
