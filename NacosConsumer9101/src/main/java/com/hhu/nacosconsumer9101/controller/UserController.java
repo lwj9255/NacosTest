@@ -19,4 +19,11 @@ public class UserController {
         System.out.println("----Nacos Consumer Run----");
         return restTemplate.getForObject(serverURL+"/helloProvider",String.class);
     }
+
+    @GetMapping("/s1")
+    public String s1(){
+        System.out.println("s1启动成功");
+        return "s1 ok";
+    }
+
 }
